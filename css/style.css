@@ -14,9 +14,82 @@
   font-style: normal;
 }
 
+body{
+  max-width: 100%;
+}
+
+.color-primary{
+  color: #131313;
+}
+.color-secondary-dark{
+  color:  #424242;
+}
+
+.text-common{
+  font-size: 16px;
+  line-height: 162%;
+  color:  #727272;
+}
+
+.display-flex{
+  display: flex;
+}
+.margin-bottom{
+  margin-bottom: 32px;
+}
+
 /* common css ends */
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
+.header-part{
+  text-align: center;
+  background-color:  rgba(255, 144, 14, 0.1);
+  padding: 5% 10%;
 }
+
+.navbar{
+    justify-content: space-between;
+}
+
+.logo > a{
+  text-decoration: none;
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+
+
+
+.menubar > ul{
+  list-style: none;
+  gap: 1.25rem;
+  
+}
+
+.menubar > ul > li > a{
+  text-decoration: none;
+  font-size: 1.25rem;
+  color:  #424242;
+}
+
+.heading-banner{
+  font-size: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.explore-button{
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color:  #ff900e;
+  border-radius: 0.5rem;
+}
+
+.banner > img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* header part ends here */
+
