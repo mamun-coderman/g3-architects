@@ -38,6 +38,12 @@ body{
   margin-bottom: 32px;
 }
 
+.secondary-heading{
+  font-size: 45px;
+  font-weight: 500;
+  color: #727272;
+}
+
 /* common css ends */
 
 .header-part{
@@ -70,6 +76,10 @@ body{
   color:  #424242;
 }
 
+.menubar > ul > li > a:hover{
+  color: #ff900e;
+}
+
 .heading-banner{
   font-size: 4rem;
   margin-top: 1.5rem;
@@ -91,5 +101,42 @@ body{
   margin-top: 3rem;
 }
 
-/* header part ends here */
+/* header part ends here and main part starts */
 
+  .quick-list{
+    justify-content: center;
+    padding: 5% 12%;
+    gap: 4.5rem;
+  }
+
+  .quick-list-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+    border-radius: 0.5rem;
+  }
+
+  .quick-list-gallery > img{
+    width: 100%;
+  }
+
+  .quick-list-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .of-our{
+    font-weight: 700;
+  }
+
+  .feature-text{
+    font-weight: 700;
+    color: #ff900e;
+  }
+
+  .quick-list-content > a{
+    align-self: self-start;
+  }
