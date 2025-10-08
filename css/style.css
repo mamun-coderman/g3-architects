@@ -22,7 +22,7 @@ body{
   color: #131313;
 }
 .color-secondary-dark{
-  color:  #424242;
+  color:  #727272;
 }
 
 .text-common{
@@ -41,7 +41,6 @@ body{
 .secondary-heading{
   font-size: 45px;
   font-weight: 500;
-  color: #727272;
 }
 
 /* common css ends */
@@ -176,12 +175,16 @@ body{
 
 .feature-photo{
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  }
 
  .feature-photo > img{
     width: 100%;
     border-radius: 0.5rem;
-    height: 90%;
+    height: auto;
  }
 
 .experience-button{
@@ -205,3 +208,54 @@ body{
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+/* features end and some facts parts starts */
+
+.some-facts-part{
+  padding: 5% 10%;
+}
+
+.fact-card-container{
+  justify-content: space-around;
+  
+}
+
+.fact-cart{
+  border: 1px solid #ff900e;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* some facts ends and sponsor part starts */
+
+.sponsor-part{
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.image-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container > img{
+  width: auto;
+}
+
+/* sponsor part ends and footer part starts */
+
+.footer-part{
+  margin: 5% 10%;
+  background-color: #fff4e7;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  color:  #424242;
+}
+
+/* footer part ends */
