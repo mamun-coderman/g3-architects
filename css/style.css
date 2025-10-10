@@ -162,6 +162,13 @@ body{
   font-size: 1.1rem;
 }
 
+.menubar > ul > li > a:hover{
+  color: #131313;
+  background-color: #ff900e;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
 .menu-icon{
   display: block;
 }
@@ -408,7 +415,19 @@ body{
   width: auto;
 }
 
-/* sponsor part ends and footer part starts 
+/* sponsor part for desktop ends and responsive for mobile starts */
+
+@media screen and ( max-width: 768px){
+  .image-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+/* sponsor part responsive for mobile ends */
+
+/* footer part for desktop starts here */ 
 
 .footer-part{
   margin: 5% 10%;
@@ -420,8 +439,15 @@ body{
   color:  #424242;
 }
 
-/* footer part ends 
+/* footer part for desktop ends and responsive for mobile starts*/ 
 
+@media screen and (max-width: 768px){
+  .footer-part{
+    padding: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+}
 
+/* footer part responsive for mobile eds */
 
-*/
