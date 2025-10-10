@@ -26,7 +26,7 @@ body{
 }
 
 .text-common{
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 162%;
   color:  #727272;
 }
@@ -35,21 +35,44 @@ body{
   display: flex;
 }
 .margin-bottom{
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .secondary-heading{
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 500;
 }
 
-/* common css ends */
+/* common css ends for desktop version */
+
+/* now common css for mobile device */
+
+@media screen and (max-width: 768px) {
+  .text-common{
+  font-size: 0.875rem;
+}
+
+.margin-bottom{
+  margin-bottom: 1.5rem;
+}
+
+.secondary-heading{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+}
+
+/* common css for responsive part ends */
+
+/* header part for desktop starts */
 
 .header-part{
   text-align: center;
   background-color:  rgba(255, 144, 14, 0.1);
   padding: 5% 10%;
 }
+
 
 .navbar{
     justify-content: space-between;
@@ -60,8 +83,6 @@ body{
   font-size: 2.9rem;
   font-weight: 700;
 }
-
-
 
 .menubar > ul{
   list-style: none;
@@ -77,6 +98,17 @@ body{
 
 .menubar > ul > li > a:hover{
   color: #ff900e;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+.menu-icon{
+  font-size: 1.7rem;
+  color: #ff900e;
+  cursor: pointer;
+  display: none;
 }
 
 .heading-banner{
@@ -100,7 +132,64 @@ body{
   margin-top: 3rem;
 }
 
-/* header part ends here and main part starts */
+/* header part for desktop ends here */
+/* header part for mobile starts here */
+
+@media screen and (max-width: 768px){
+  
+  .navbar{
+    justify-content: space-around;
+}
+
+.logo > a{
+  font-size: 1.75rem;
+}
+
+.menubar > ul{
+  display: none;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  top: 8%;
+  right: 0;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.menubar > ul > li > a{
+  font-size: 1.1rem;
+}
+
+.menu-icon{
+  display: block;
+}
+
+#menu-toggle:checked ~ .menubar > ul{
+  display: flex;
+}
+
+.heading-banner{
+  font-size: 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.explore-button{
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+}
+
+/*  header part responsive for mobile done */
+
+/* main part starts here */
+
+/* quick list part for desktop starts here  */
 
   .quick-list{
     justify-content: center;
@@ -140,7 +229,30 @@ body{
     align-self: self-start;
   }
 
-  /* quick list ends and features love & enjoyable starts */
+  /* quick list ends for desktop part and mobile part starts here*/
+  
+  @media screen and (max-width: 768px){
+    .quick-list{
+    flex-direction: column;
+  }
+
+  .quick-list-gallery{
+    gap: 1rem;
+  }
+
+  .quick-list-content{
+    text-align: center;
+  }
+
+  .quick-list-content > a{
+    align-self: center;
+  }
+
+  }
+
+  /* quick list reponsive for mobile done */
+  
+  /*features love & enjoyable for desktop starts here */  
 
  .feature-enjoyable{
     gap: 9rem;
@@ -209,7 +321,11 @@ body{
   font-weight: 500;
 }
 
-/* features end and some facts parts starts */
+/* features for desktop done and responsive for mobile starts here */
+
+
+
+/* some facts for desktop starts here
 
 .some-facts-part{
   padding: 5% 10%;
@@ -230,7 +346,7 @@ body{
   align-items: center;
 }
 
-/* some facts ends and sponsor part starts */
+/* some facts ends and sponsor part starts 
 
 .sponsor-part{
   padding: 5% 10%;
@@ -246,7 +362,7 @@ body{
   width: auto;
 }
 
-/* sponsor part ends and footer part starts */
+/* sponsor part ends and footer part starts 
 
 .footer-part{
   margin: 5% 10%;
@@ -258,4 +374,8 @@ body{
   color:  #424242;
 }
 
-/* footer part ends */
+/* footer part ends 
+
+
+
+*/
